@@ -1,59 +1,49 @@
-# ReceitasGastronomicas
+# 🍽️ Receitas Gastronômicas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+Frontend Angular que usa a [API TheMealDB](https://www.themealdb.com/) para exibir receitas. Tem busca, ordenação alfabética, paginação e clicando em alguma receita, te leva para a página dos detalhes da mesma.
 
-## Development server
+---
 
-To start a local development server, run:
+## Site rodando
 
-```bash
-ng serve
-```
+![Versão Desktop](./assets-readme/screenshot-desktop.png)
+![Versão Mobile](./assets-readme/screenshot-mobile.png)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Funcionalidades
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Busca por nome da receita
+- Ordenação alfabética
+- Paginação de dezenas de receitas
+- Página de detalhes com ingredientes e modo de preparo
+- Responsivo (mobile-first) com Bootstrap
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Tecnologias utilizadas
 
-```bash
-ng generate --help
-```
+- [Angular](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com/)
+- [TheMealDB API](https://www.themealdb.com/)
+- HTML + CSS + TypeScript
 
-## Building
+---
 
-To build the project run:
+## Instalação
 
-```bash
-ng build
-```
+  # Clone o rep
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+  git clone https://github.com/Lorenzette/receitas-gastronomicas.git
 
-## Running unit tests
+  # Acesse a pasta
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+  cd receitas-gastronomicas
 
-```bash
-ng test
-```
+  # Instale as dependências
 
-## Running end-to-end tests
+  npm install
 
-For end-to-end (e2e) testing, run:
+  # Inicie
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+  ng serve
