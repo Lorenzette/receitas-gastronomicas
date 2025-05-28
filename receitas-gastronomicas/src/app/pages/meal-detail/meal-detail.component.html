@@ -1,0 +1,18 @@
+<div class="container my-5" *ngIf="meal">
+  <div class="row">
+    <div class="col-md-6">
+      <img [src]="meal.strMealThumb" alt="{{ meal.strMeal }}" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <h2 class="mb-3">{{ meal.strMeal }}</h2>
+      <h5>Categoria: {{ meal.strCategory }}</h5>
+      <h5>Área: {{ meal.strArea }}</h5>
+      <p class="mt-4"><strong>Instruções:</strong><br>{{ meal.strInstructions }}</p>
+
+      <h5 class="mt-4">Ingredientes:</h5>
+      <ul>
+        <li *ngFor="let item of ingredients">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

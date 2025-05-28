@@ -1,0 +1,25 @@
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #fff8f3;
+  color: #3e2f1c;
+}
+
+h1, h2, h5 {
+  color: #a94442;
+}
+
+.btn-outline-secondary {
+  border-color: #a94442;
+  color: #a94442;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #a94442;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: none;
+  border-radius: 12px;
+}

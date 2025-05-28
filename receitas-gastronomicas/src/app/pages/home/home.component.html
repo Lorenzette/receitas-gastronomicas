@@ -1,0 +1,25 @@
+<div class="container my-4">
+  <h1 class="text-center mb-4">Receitas Gastronômicas</h1>
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" [(ngModel)]="searchTerm" (input)="searchMeals()" placeholder="Buscar receitas...">
+    <button class="btn btn-outline-secondary" (click)="toggleOrder()">Ordenar {{ alphabeticalOrder ? 'Z-A' : 'A-Z' }}</button>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let meal of paginatedMeals()">
+      <app-meal-card [meal]="meal" (click)="viewDetails(meal.idMeal)"></app-meal-card>
+    </div>
+  </div>
+
+  <nav class="mt-4">
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [class.disabled]="currentPage === 1">
+        <button class="page-link" (click)="previousPage()">Anterior</button>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages()">
+        <button class="page-link" (click)="nextPage()">Próxima</button>
+      </li>
+    </ul>
+  </nav>
+</div>
